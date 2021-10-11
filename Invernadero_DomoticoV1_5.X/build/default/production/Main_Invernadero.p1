@@ -1,0 +1,922 @@
+Version 4.0 HI-TECH Software Intermediate Code
+[p mainexit ]
+"4223 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[v _TRISE `Vuc ~T0 @X0 0 e@3990 ]
+"4001
+[v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
+"7986
+[v _OSCCON `Vuc ~T0 @X0 0 e@4051 ]
+"6581
+[v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
+"3847
+[v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
+"25 Main_Invernadero.c
+[v _ApagarAspersores `(v ~T0 @X0 0 e? ]
+"26
+[v _ApagarVentiladores `(v ~T0 @X0 0 e? ]
+"10392 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[v _RBPU `Vb ~T0 @X0 0 e@32655 ]
+"37 ./LCD.h
+[v _LCD_Init `(v ~T0 @X0 0 e? ]
+"24 Main_Invernadero.c
+[v _InicializarLeds `(v ~T0 @X0 0 e? ]
+"19
+[v _PedirDato `(v ~T0 @X0 0 ef3`*uc`*uc`i ]
+[v F3152 `(v ~T0 @X0 1 tf1`ul ]
+"203 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\pic18.h
+[v __delay `JF3152 ~T0 @X0 0 e ]
+[p i __delay ]
+"21 Main_Invernadero.c
+[v _DatoDigitado `(i ~T0 @X0 0 ef1`*uc ]
+"23
+[v _DatosSensorTH `(v ~T0 @X0 0 ef1`*uc ]
+"22
+[v _Comparar_T_H_Adecuados `(v ~T0 @X0 0 ef6`*uc`*uc`i`i`i`i ]
+"18
+[v _ControlHumedadAspersor `(v ~T0 @X0 0 ef3`*uc`i`i ]
+"17
+[v _ControlTemperaturaVentilador `(v ~T0 @X0 0 ef3`*uc`i`i ]
+"113 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"41 ./LCD.h
+[v _LCD_String_xy `(v ~T0 @X0 0 ef3`uc`uc`*Cuc ]
+"39
+[v _LCD_Char `(v ~T0 @X0 0 ef1`uc ]
+"40
+[v _LCD_String `(v ~T0 @X0 0 ef1`*Cuc ]
+"10011 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[v _LATE0 `Vb ~T0 @X0 0 e@31848 ]
+"10014
+[v _LATE1 `Vb ~T0 @X0 0 e@31849 ]
+"10017
+[v _LATE2 `Vb ~T0 @X0 0 e@31850 ]
+"42 ./LCD.h
+[v _LCD_Clear `(v ~T0 @X0 0 e? ]
+"38
+[v _LCD_Command `(v ~T0 @X0 0 ef1`uc ]
+"47 ./keypad.h
+[v _keyfind `(uc ~T0 @X0 0 e? ]
+"15 ./DHT11.h
+[v _DHT11_Start `(v ~T0 @X0 0 e? ]
+"16
+[v _DHT11_CheckResponse `(v ~T0 @X0 0 e? ]
+"17
+[v _DHT11_ReadData `(uc ~T0 @X0 0 e? ]
+"9972 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[v _LATC0 `Vb ~T0 @X0 0 e@31832 ]
+"9975
+[v _LATC1 `Vb ~T0 @X0 0 e@31833 ]
+"9978
+[v _LATC2 `Vb ~T0 @X0 0 e@31834 ]
+"9981
+[v _LATC6 `Vb ~T0 @X0 0 e@31838 ]
+"21 ./Config.h
+[p x FOSC  =  INTOSC_EC  ]
+"22
+[p x FCMEN  =  OFF       ]
+"23
+[p x IESO  =  OFF        ]
+"26
+[p x PWRT  =  OFF        ]
+"27
+[p x BOR  =  ON          ]
+"28
+[p x BORV  =  3          ]
+"29
+[p x VREGEN  =  OFF      ]
+"32
+[p x WDT  =  OFF         ]
+"33
+[p x WDTPS  =  32768     ]
+"36
+[p x CCP2MX  =  ON       ]
+"37
+[p x PBADEN  =  OFF       ]
+"38
+[p x LPT1OSC  =  OFF     ]
+"39
+[p x MCLRE  =  ON      ]
+"42
+[p x STVREN  =  ON       ]
+"43
+[p x LVP  =  OFF         ]
+"44
+[p x ICPRT  =  OFF       ]
+"45
+[p x XINST  =  OFF       ]
+"48
+[p x CP0  =  OFF         ]
+"49
+[p x CP1  =  OFF         ]
+"50
+[p x CP2  =  OFF         ]
+"51
+[p x CP3  =  OFF         ]
+"54
+[p x CPB  =  OFF         ]
+"55
+[p x CPD  =  OFF         ]
+"58
+[p x WRT0  =  OFF        ]
+"59
+[p x WRT1  =  OFF        ]
+"60
+[p x WRT2  =  OFF        ]
+"61
+[p x WRT3  =  OFF        ]
+"64
+[p x WRTC  =  OFF        ]
+"65
+[p x WRTB  =  OFF        ]
+"66
+[p x WRTD  =  OFF        ]
+"69
+[p x EBTR0  =  OFF       ]
+"70
+[p x EBTR1  =  OFF       ]
+"71
+[p x EBTR2  =  OFF       ]
+"72
+[p x EBTR3  =  OFF       ]
+"75
+[p x EBTRB  =  OFF       ]
+"54 C:/Program Files/Microchip/MPLABX/v5.50/packs/Microchip/PIC18Fxxxx_DFP/1.2.26/xc8\pic\include\proc\pic18f4550.h
+[; <" SPPDATA equ 0F62h ;# ">
+"74
+[; <" SPPCFG equ 0F63h ;# ">
+"151
+[; <" SPPEPS equ 0F64h ;# ">
+"225
+[; <" SPPCON equ 0F65h ;# ">
+"251
+[; <" UFRM equ 0F66h ;# ">
+"258
+[; <" UFRML equ 0F66h ;# ">
+"336
+[; <" UFRMH equ 0F67h ;# ">
+"376
+[; <" UIR equ 0F68h ;# ">
+"432
+[; <" UIE equ 0F69h ;# ">
+"488
+[; <" UEIR equ 0F6Ah ;# ">
+"539
+[; <" UEIE equ 0F6Bh ;# ">
+"590
+[; <" USTAT equ 0F6Ch ;# ">
+"650
+[; <" UCON equ 0F6Dh ;# ">
+"701
+[; <" UADDR equ 0F6Eh ;# ">
+"765
+[; <" UCFG equ 0F6Fh ;# ">
+"844
+[; <" UEP0 equ 0F70h ;# ">
+"952
+[; <" UEP1 equ 0F71h ;# ">
+"1060
+[; <" UEP2 equ 0F72h ;# ">
+"1168
+[; <" UEP3 equ 0F73h ;# ">
+"1276
+[; <" UEP4 equ 0F74h ;# ">
+"1384
+[; <" UEP5 equ 0F75h ;# ">
+"1492
+[; <" UEP6 equ 0F76h ;# ">
+"1600
+[; <" UEP7 equ 0F77h ;# ">
+"1708
+[; <" UEP8 equ 0F78h ;# ">
+"1784
+[; <" UEP9 equ 0F79h ;# ">
+"1860
+[; <" UEP10 equ 0F7Ah ;# ">
+"1936
+[; <" UEP11 equ 0F7Bh ;# ">
+"2012
+[; <" UEP12 equ 0F7Ch ;# ">
+"2088
+[; <" UEP13 equ 0F7Dh ;# ">
+"2164
+[; <" UEP14 equ 0F7Eh ;# ">
+"2240
+[; <" UEP15 equ 0F7Fh ;# ">
+"2316
+[; <" PORTA equ 0F80h ;# ">
+"2455
+[; <" PORTB equ 0F81h ;# ">
+"2565
+[; <" PORTC equ 0F82h ;# ">
+"2707
+[; <" PORTD equ 0F83h ;# ">
+"2828
+[; <" PORTE equ 0F84h ;# ">
+"2975
+[; <" LATA equ 0F89h ;# ">
+"3075
+[; <" LATB equ 0F8Ah ;# ">
+"3187
+[; <" LATC equ 0F8Bh ;# ">
+"3265
+[; <" LATD equ 0F8Ch ;# ">
+"3377
+[; <" LATE equ 0F8Dh ;# ">
+"3429
+[; <" TRISA equ 0F92h ;# ">
+"3434
+[; <" DDRA equ 0F92h ;# ">
+"3627
+[; <" TRISB equ 0F93h ;# ">
+"3632
+[; <" DDRB equ 0F93h ;# ">
+"3849
+[; <" TRISC equ 0F94h ;# ">
+"3854
+[; <" DDRC equ 0F94h ;# ">
+"4003
+[; <" TRISD equ 0F95h ;# ">
+"4008
+[; <" DDRD equ 0F95h ;# ">
+"4225
+[; <" TRISE equ 0F96h ;# ">
+"4230
+[; <" DDRE equ 0F96h ;# ">
+"4327
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"4386
+[; <" PIE1 equ 0F9Dh ;# ">
+"4470
+[; <" PIR1 equ 0F9Eh ;# ">
+"4554
+[; <" IPR1 equ 0F9Fh ;# ">
+"4638
+[; <" PIE2 equ 0FA0h ;# ">
+"4709
+[; <" PIR2 equ 0FA1h ;# ">
+"4780
+[; <" IPR2 equ 0FA2h ;# ">
+"4851
+[; <" EECON1 equ 0FA6h ;# ">
+"4917
+[; <" EECON2 equ 0FA7h ;# ">
+"4924
+[; <" EEDATA equ 0FA8h ;# ">
+"4931
+[; <" EEADR equ 0FA9h ;# ">
+"4938
+[; <" RCSTA equ 0FABh ;# ">
+"4943
+[; <" RCSTA1 equ 0FABh ;# ">
+"5148
+[; <" TXSTA equ 0FACh ;# ">
+"5153
+[; <" TXSTA1 equ 0FACh ;# ">
+"5404
+[; <" TXREG equ 0FADh ;# ">
+"5409
+[; <" TXREG1 equ 0FADh ;# ">
+"5416
+[; <" RCREG equ 0FAEh ;# ">
+"5421
+[; <" RCREG1 equ 0FAEh ;# ">
+"5428
+[; <" SPBRG equ 0FAFh ;# ">
+"5433
+[; <" SPBRG1 equ 0FAFh ;# ">
+"5440
+[; <" SPBRGH equ 0FB0h ;# ">
+"5447
+[; <" T3CON equ 0FB1h ;# ">
+"5568
+[; <" TMR3 equ 0FB2h ;# ">
+"5575
+[; <" TMR3L equ 0FB2h ;# ">
+"5582
+[; <" TMR3H equ 0FB3h ;# ">
+"5589
+[; <" CMCON equ 0FB4h ;# ">
+"5679
+[; <" CVRCON equ 0FB5h ;# ">
+"5764
+[; <" ECCP1AS equ 0FB6h ;# ">
+"5769
+[; <" CCP1AS equ 0FB6h ;# ">
+"5926
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"5931
+[; <" CCP1DEL equ 0FB7h ;# ">
+"6064
+[; <" BAUDCON equ 0FB8h ;# ">
+"6069
+[; <" BAUDCTL equ 0FB8h ;# ">
+"6244
+[; <" CCP2CON equ 0FBAh ;# ">
+"6308
+[; <" CCPR2 equ 0FBBh ;# ">
+"6315
+[; <" CCPR2L equ 0FBBh ;# ">
+"6322
+[; <" CCPR2H equ 0FBCh ;# ">
+"6329
+[; <" CCP1CON equ 0FBDh ;# ">
+"6334
+[; <" ECCP1CON equ 0FBDh ;# ">
+"6491
+[; <" CCPR1 equ 0FBEh ;# ">
+"6498
+[; <" CCPR1L equ 0FBEh ;# ">
+"6505
+[; <" CCPR1H equ 0FBFh ;# ">
+"6512
+[; <" ADCON2 equ 0FC0h ;# ">
+"6583
+[; <" ADCON1 equ 0FC1h ;# ">
+"6668
+[; <" ADCON0 equ 0FC2h ;# ">
+"6787
+[; <" ADRES equ 0FC3h ;# ">
+"6794
+[; <" ADRESL equ 0FC3h ;# ">
+"6801
+[; <" ADRESH equ 0FC4h ;# ">
+"6808
+[; <" SSPCON2 equ 0FC5h ;# ">
+"6870
+[; <" SSPCON1 equ 0FC6h ;# ">
+"6940
+[; <" SSPSTAT equ 0FC7h ;# ">
+"7188
+[; <" SSPADD equ 0FC8h ;# ">
+"7195
+[; <" SSPBUF equ 0FC9h ;# ">
+"7202
+[; <" T2CON equ 0FCAh ;# ">
+"7300
+[; <" PR2 equ 0FCBh ;# ">
+"7305
+[; <" MEMCON equ 0FCBh ;# ">
+"7410
+[; <" TMR2 equ 0FCCh ;# ">
+"7417
+[; <" T1CON equ 0FCDh ;# ">
+"7520
+[; <" TMR1 equ 0FCEh ;# ">
+"7527
+[; <" TMR1L equ 0FCEh ;# ">
+"7534
+[; <" TMR1H equ 0FCFh ;# ">
+"7541
+[; <" RCON equ 0FD0h ;# ">
+"7690
+[; <" WDTCON equ 0FD1h ;# ">
+"7718
+[; <" HLVDCON equ 0FD2h ;# ">
+"7723
+[; <" LVDCON equ 0FD2h ;# ">
+"7988
+[; <" OSCCON equ 0FD3h ;# ">
+"8071
+[; <" T0CON equ 0FD5h ;# ">
+"8141
+[; <" TMR0 equ 0FD6h ;# ">
+"8148
+[; <" TMR0L equ 0FD6h ;# ">
+"8155
+[; <" TMR0H equ 0FD7h ;# ">
+"8162
+[; <" STATUS equ 0FD8h ;# ">
+"8233
+[; <" FSR2 equ 0FD9h ;# ">
+"8240
+[; <" FSR2L equ 0FD9h ;# ">
+"8247
+[; <" FSR2H equ 0FDAh ;# ">
+"8254
+[; <" PLUSW2 equ 0FDBh ;# ">
+"8261
+[; <" PREINC2 equ 0FDCh ;# ">
+"8268
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"8275
+[; <" POSTINC2 equ 0FDEh ;# ">
+"8282
+[; <" INDF2 equ 0FDFh ;# ">
+"8289
+[; <" BSR equ 0FE0h ;# ">
+"8296
+[; <" FSR1 equ 0FE1h ;# ">
+"8303
+[; <" FSR1L equ 0FE1h ;# ">
+"8310
+[; <" FSR1H equ 0FE2h ;# ">
+"8317
+[; <" PLUSW1 equ 0FE3h ;# ">
+"8324
+[; <" PREINC1 equ 0FE4h ;# ">
+"8331
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"8338
+[; <" POSTINC1 equ 0FE6h ;# ">
+"8345
+[; <" INDF1 equ 0FE7h ;# ">
+"8352
+[; <" WREG equ 0FE8h ;# ">
+"8359
+[; <" FSR0 equ 0FE9h ;# ">
+"8366
+[; <" FSR0L equ 0FE9h ;# ">
+"8373
+[; <" FSR0H equ 0FEAh ;# ">
+"8380
+[; <" PLUSW0 equ 0FEBh ;# ">
+"8387
+[; <" PREINC0 equ 0FECh ;# ">
+"8394
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"8401
+[; <" POSTINC0 equ 0FEEh ;# ">
+"8408
+[; <" INDF0 equ 0FEFh ;# ">
+"8415
+[; <" INTCON3 equ 0FF0h ;# ">
+"8507
+[; <" INTCON2 equ 0FF1h ;# ">
+"8584
+[; <" INTCON equ 0FF2h ;# ">
+"8701
+[; <" PROD equ 0FF3h ;# ">
+"8708
+[; <" PRODL equ 0FF3h ;# ">
+"8715
+[; <" PRODH equ 0FF4h ;# ">
+"8722
+[; <" TABLAT equ 0FF5h ;# ">
+"8731
+[; <" TBLPTR equ 0FF6h ;# ">
+"8738
+[; <" TBLPTRL equ 0FF6h ;# ">
+"8745
+[; <" TBLPTRH equ 0FF7h ;# ">
+"8752
+[; <" TBLPTRU equ 0FF8h ;# ">
+"8761
+[; <" PCLAT equ 0FF9h ;# ">
+"8768
+[; <" PC equ 0FF9h ;# ">
+"8775
+[; <" PCL equ 0FF9h ;# ">
+"8782
+[; <" PCLATH equ 0FFAh ;# ">
+"8789
+[; <" PCLATU equ 0FFBh ;# ">
+"8796
+[; <" STKPTR equ 0FFCh ;# ">
+"8872
+[; <" TOS equ 0FFDh ;# ">
+"8879
+[; <" TOSL equ 0FFDh ;# ">
+"8886
+[; <" TOSH equ 0FFEh ;# ">
+"8893
+[; <" TOSU equ 0FFFh ;# ">
+[v $root$_main `(v ~T0 @X0 0 e ]
+"28 Main_Invernadero.c
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"31
+[e = _TRISE -> -> 0 `i `uc ]
+"32
+[e = _TRISD -> -> 0 `i `uc ]
+"33
+[v _bandera `a ~T0 @X0 1 a ]
+[e = _bandera -> -> 0 `i `a ]
+"34
+[v _Temperatura `uc ~T0 @X0 -> 2 `i a ]
+"35
+[v _Humedad `uc ~T0 @X0 -> 2 `i a ]
+"36
+[v _MargenErrorT `uc ~T0 @X0 -> -> 1 `i `ux a ]
+"37
+[v _MargenErrorH `uc ~T0 @X0 -> -> 1 `i `ux a ]
+"38
+[v _MargenET `i ~T0 @X0 1 a ]
+[e = _MargenET -> 0 `i ]
+"39
+[v _MargenEH `i ~T0 @X0 1 a ]
+[e = _MargenEH -> 0 `i ]
+"40
+[v _Datos `uc ~T0 @X0 -> 2 `i a ]
+"41
+[v _Cadena `uc ~T0 @X0 -> 10 `i a ]
+"42
+[v _indice `i ~T0 @X0 1 a ]
+[e = _indice -> 0 `i ]
+"43
+[v _TemperaturaAdecuada `i ~T0 @X0 1 a ]
+[e = _TemperaturaAdecuada -> 0 `i ]
+"44
+[v _HumedadAdecuada `i ~T0 @X0 1 a ]
+[e = _HumedadAdecuada -> 0 `i ]
+"47
+[e = _OSCCON -> -> 114 `i `uc ]
+"49
+[e = _ADCON1 -> -> 15 `i `uc ]
+"50
+[e = _TRISC -> -> 0 `i `uc ]
+"51
+[e ( _ApagarAspersores ..  ]
+"52
+[e ( _ApagarVentiladores ..  ]
+"53
+[e = _RBPU -> -> 0 `i `b ]
+"54
+[e ( _LCD_Init ..  ]
+"55
+[e ( _InicializarLeds ..  ]
+"56
+[e :U 372 ]
+{
+"57
+[e $ ! < _indice -> 2 `i 374  ]
+{
+"58
+[e ( _PedirDato (3 , , :s 1C &U _Temperatura -> 2 `i ]
+"59
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"60
+[e ( _PedirDato (3 , , :s 2C &U _MargenErrorT -> 1 `i ]
+"61
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"62
+[e ( _PedirDato (3 , , :s 3C &U _Humedad -> 2 `i ]
+"63
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"64
+[e ( _PedirDato (3 , , :s 4C &U _MargenErrorH -> 1 `i ]
+"65
+[e = _indice -> 2 `i ]
+"66
+}
+[e $U 375  ]
+[e :U 374 ]
+{
+"67
+[e $ ! == -> _bandera `i -> 0 `i 376  ]
+{
+"68
+[e = _TemperaturaAdecuada ( _DatoDigitado (1 &U _Temperatura ]
+"69
+[e = _HumedadAdecuada ( _DatoDigitado (1 &U _Humedad ]
+"70
+[e = _MargenET - -> *U + &U _MargenErrorT * -> -> -> 0 `i `ui `ux -> -> # *U &U _MargenErrorT `ui `ux `i -> 48 `i ]
+"71
+[e = _MargenEH - -> *U + &U _MargenErrorH * -> -> -> 0 `i `ui `ux -> -> # *U &U _MargenErrorH `ui `ux `i -> 48 `i ]
+"72
+}
+[e :U 376 ]
+"73
+[e = _bandera -> -> 1 `i `a ]
+"74
+}
+[e :U 375 ]
+"75
+[e $ ! == -> _bandera `i -> 1 `i 377  ]
+{
+"76
+[e ( _DatosSensorTH (1 &U _Datos ]
+"77
+[e ( _Comparar_T_H_Adecuados (4 , , , , , &U *U + &U _Datos * -> -> -> 0 `i `ui `ux -> -> # *U &U _Datos `ui `ux &U *U + &U _Datos * -> -> -> 1 `i `ui `ux -> -> # *U &U _Datos `ui `ux _TemperaturaAdecuada _HumedadAdecuada _MargenET _MargenEH ]
+"78
+[e ( _ControlHumedadAspersor (3 , , &U *U + &U _Datos * -> -> -> 1 `i `ui `ux -> -> # *U &U _Datos `ui `ux _HumedadAdecuada _MargenEH ]
+"79
+[e ( _ControlTemperaturaVentilador (3 , , &U *U + &U _Datos * -> -> -> 0 `i `ui `ux -> -> # *U &U _Datos `ui `ux _TemperaturaAdecuada _MargenET ]
+"82
+[e ( _sprintf (1 , (. , &U _Cadena :s 5C -> *U + &U _Datos * -> -> -> 1 `i `ui `ux -> -> # *U &U _Datos `ui `ux `i ]
+"83
+[e ( _LCD_String_xy (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> &U _Cadena `*Cuc ]
+"84
+[e ( _sprintf (1 , (. , &U _Cadena :s 6C -> 0 `i ]
+"85
+[e ( _LCD_Char (1 -> -> 37 `ui `uc ]
+"86
+[e ( _sprintf (1 , &U _Cadena :s 7C ]
+"87
+[e ( _LCD_String (1 -> &U _Cadena `*Cuc ]
+"90
+[e ( _sprintf (1 , (. , &U _Cadena :s 8C -> *U + &U _Datos * -> -> -> 0 `i `ui `ux -> -> # *U &U _Datos `ui `ux `i ]
+"91
+[e ( _LCD_String_xy (3 , , -> -> 2 `i `uc -> -> 0 `i `uc -> &U _Cadena `*Cuc ]
+"92
+[e ( _sprintf (1 , (. , &U _Cadena :s 9C -> 0 `i ]
+"93
+[e ( _LCD_Char (1 -> -> 223 `i `uc ]
+"94
+[e ( _sprintf (1 , &U _Cadena :s 10C ]
+"95
+[e ( _LCD_String (1 -> &U _Cadena `*Cuc ]
+"97
+[e ( __delay (1 -> * -> -> 800 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"98
+}
+[e :U 377 ]
+"100
+}
+[e :U 371 ]
+[e $U 372  ]
+[e :U 373 ]
+"102
+[e :UE 370 ]
+}
+"104
+[v _PrenderLed `(v ~T0 @X0 1 ef2`a`a ]
+{
+[e :U _PrenderLed ]
+[v _TemperaturaAdecuada `a ~T0 @X0 1 r1 ]
+[v _HumedadAdecuada `a ~T0 @X0 1 r2 ]
+[f ]
+"105
+[e ( _InicializarLeds ..  ]
+"106
+[e $ ! && == -> _TemperaturaAdecuada `i -> 0 `i == -> _HumedadAdecuada `i -> 0 `i 379  ]
+{
+"107
+[e = _LATE0 -> -> 1 `i `b ]
+"108
+}
+[e $U 380  ]
+[e :U 379 ]
+[e $ ! || == -> _TemperaturaAdecuada `i -> 0 `i == -> _HumedadAdecuada `i -> 0 `i 381  ]
+{
+"109
+[e = _LATE1 -> -> 1 `i `b ]
+"110
+}
+[e $U 382  ]
+[e :U 381 ]
+{
+"111
+[e = _LATE2 -> -> 1 `i `b ]
+"112
+}
+[e :U 382 ]
+[e :U 380 ]
+"113
+[e :UE 378 ]
+}
+"115
+[v _DatoDigitado `(i ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _DatoDigitado ]
+[v _prmTemperatura `*uc ~T0 @X0 1 r1 ]
+[f ]
+"116
+[v _Decena `i ~T0 @X0 1 a ]
+[e = _Decena -> 0 `i ]
+"117
+[v _Unidad `i ~T0 @X0 1 a ]
+[e = _Unidad -> 0 `i ]
+"119
+[v _Resultado `i ~T0 @X0 1 a ]
+[e = _Resultado -> 0 `i ]
+"121
+[e = _Decena -> - -> *U + _prmTemperatura * -> -> 0 `i `x -> -> # *U _prmTemperatura `i `x `ui -> 48 `ui `i ]
+"122
+[e = _Unidad -> - -> *U + _prmTemperatura * -> -> 1 `i `x -> -> # *U _prmTemperatura `i `x `ui -> 48 `ui `i ]
+"124
+[e = _Decena * _Decena -> 10 `i ]
+"125
+[e = _Resultado + _Decena _Unidad ]
+"127
+[e ) _Resultado ]
+[e $UE 383  ]
+"128
+[e :UE 383 ]
+}
+"131
+[v _Comparar_T_H_Adecuados `(v ~T0 @X0 1 ef6`*uc`*uc`i`i`i`i ]
+"132
+{
+[e :U _Comparar_T_H_Adecuados ]
+"131
+[v _TempActual `*uc ~T0 @X0 1 r1 ]
+[v _HumActual `*uc ~T0 @X0 1 r2 ]
+[v _TempDigitada `i ~T0 @X0 1 r3 ]
+"132
+[v _HumDigitada `i ~T0 @X0 1 r4 ]
+[v _MargenErrorT `i ~T0 @X0 1 r5 ]
+[v _MargenErrorH `i ~T0 @X0 1 r6 ]
+[f ]
+"133
+[v _TemperaturaAdecuada `a ~T0 @X0 1 a ]
+[e = _TemperaturaAdecuada -> -> 1 `i `a ]
+"134
+[v _HumedadAdecuada `a ~T0 @X0 1 a ]
+[e = _HumedadAdecuada -> -> 1 `i `a ]
+"135
+[e $ ! || < -> *U _TempActual `i - _TempDigitada _MargenErrorT > -> *U _TempActual `i + _TempDigitada _MargenErrorT 385  ]
+{
+"136
+[e = _TemperaturaAdecuada -> -> 0 `i `a ]
+"137
+}
+[e :U 385 ]
+"138
+[e $ ! || < -> *U _HumActual `i - _HumDigitada _MargenErrorH > -> *U _HumActual `i + _HumDigitada _MargenErrorH 386  ]
+{
+"139
+[e = _HumedadAdecuada -> -> 0 `i `a ]
+"140
+}
+[e :U 386 ]
+"142
+[e ( _PrenderLed (2 , _TemperaturaAdecuada _HumedadAdecuada ]
+"143
+[e :UE 384 ]
+}
+"145
+[v _PedirDato `(v ~T0 @X0 1 ef3`*uc`*uc`i ]
+{
+[e :U _PedirDato ]
+[v _Etiqueta `*uc ~T0 @X0 1 r1 ]
+[v _vecLlenar `*uc ~T0 @X0 1 r2 ]
+[v _CantDatos `i ~T0 @X0 1 r3 ]
+[f ]
+"146
+[e ( _LCD_Clear ..  ]
+"148
+[v _tecla `uc ~T0 @X0 1 a ]
+"149
+[e ( _LCD_String_xy (3 , , -> -> 0 `i `uc -> -> 0 `i `uc -> _Etiqueta `*Cuc ]
+"150
+[e ( _LCD_Command (1 -> -> 192 `i `uc ]
+"152
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 391  ]
+[e :U 388 ]
+{
+"153
+[e = _tecla ( _keyfind ..  ]
+"154
+[e ( _LCD_Char (1 _tecla ]
+"155
+[e = *U + _vecLlenar * -> _i `x -> -> # *U _vecLlenar `i `x _tecla ]
+"156
+}
+[e ++ _i -> 1 `i ]
+[e :U 391 ]
+[e $ < _i _CantDatos 388  ]
+[e :U 389 ]
+}
+"157
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 8000000 `l `d .4000.0 `ul ]
+"158
+[e ( _LCD_Clear ..  ]
+"159
+[e :UE 387 ]
+}
+"161
+[v _DatosSensorTH `(v ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _DatosSensorTH ]
+[v _Datos `*uc ~T0 @X0 1 r1 ]
+[f ]
+"162
+[v _RH_Decimal `uc ~T0 @X0 1 a ]
+[v _RH_Integral `uc ~T0 @X0 1 a ]
+[v _T_Decimal `uc ~T0 @X0 1 a ]
+[v _T_Integral `uc ~T0 @X0 1 a ]
+"163
+[v _Checksum `uc ~T0 @X0 1 a ]
+"164
+[e ( _DHT11_Start ..  ]
+"165
+[e ( _DHT11_CheckResponse ..  ]
+"168
+[e = _RH_Integral ( _DHT11_ReadData ..  ]
+"169
+[e = _RH_Decimal ( _DHT11_ReadData ..  ]
+"170
+[e = _T_Integral ( _DHT11_ReadData ..  ]
+"171
+[e = _T_Decimal ( _DHT11_ReadData ..  ]
+"172
+[e = _Checksum ( _DHT11_ReadData ..  ]
+"174
+[e = *U + _Datos * -> -> 0 `i `x -> -> # *U _Datos `i `x _T_Integral ]
+"175
+[e = *U + _Datos * -> -> 1 `i `x -> -> # *U _Datos `i `x _RH_Integral ]
+"176
+[e :UE 392 ]
+}
+"177
+[v _InicializarLeds `(v ~T0 @X0 1 ef ]
+{
+[e :U _InicializarLeds ]
+[f ]
+"178
+[e = _LATE1 -> -> 0 `i `b ]
+"179
+[e = _LATE0 -> -> 0 `i `b ]
+"180
+[e = _LATE2 -> -> 0 `i `b ]
+"181
+[e :UE 393 ]
+}
+"182
+[v _ControlHumedadAspersor `(v ~T0 @X0 1 ef3`*uc`i`i ]
+{
+[e :U _ControlHumedadAspersor ]
+[v _HumedadActual `*uc ~T0 @X0 1 r1 ]
+[v _HumedadDigitada `i ~T0 @X0 1 r2 ]
+[v _MargenErrorH `i ~T0 @X0 1 r3 ]
+[f ]
+"183
+[e $ ! < -> *U _HumedadActual `i - _HumedadDigitada _MargenErrorH 395  ]
+{
+"184
+[e = _LATC0 -> -> 1 `i `b ]
+"185
+[e = _LATC1 -> -> 1 `i `b ]
+"186
+}
+[e $U 396  ]
+[e :U 395 ]
+{
+"188
+[e = _LATC0 -> -> 0 `i `b ]
+"189
+[e = _LATC1 -> -> 0 `i `b ]
+"190
+}
+[e :U 396 ]
+"191
+[e :UE 394 ]
+}
+"193
+[v _ControlTemperaturaVentilador `(v ~T0 @X0 1 ef3`*uc`i`i ]
+{
+[e :U _ControlTemperaturaVentilador ]
+[v _TempActual `*uc ~T0 @X0 1 r1 ]
+[v _TempDigitada `i ~T0 @X0 1 r2 ]
+[v _MargenErrorT `i ~T0 @X0 1 r3 ]
+[f ]
+"194
+[e $ ! > -> *U _TempActual `i + _TempDigitada _MargenErrorT 398  ]
+{
+"195
+[e = _LATC2 -> -> 1 `i `b ]
+"196
+[e = _LATC6 -> -> 1 `i `b ]
+"197
+}
+[e $U 399  ]
+[e :U 398 ]
+{
+"198
+[e ( _ApagarVentiladores ..  ]
+"199
+}
+[e :U 399 ]
+"200
+[e :UE 397 ]
+}
+"201
+[v _ApagarAspersores `(v ~T0 @X0 1 ef ]
+{
+[e :U _ApagarAspersores ]
+[f ]
+"202
+[e = _LATC0 -> -> 0 `i `b ]
+"203
+[e = _LATC1 -> -> 0 `i `b ]
+"204
+[e :UE 400 ]
+}
+"205
+[v _ApagarVentiladores `(v ~T0 @X0 1 ef ]
+{
+[e :U _ApagarVentiladores ]
+[f ]
+"206
+[e = _LATC2 -> -> 0 `i `b ]
+"207
+[e = _LATC6 -> -> 0 `i `b ]
+"208
+[e :UE 401 ]
+}
+[p f _sprintf 8388736 ]
+[a 2C 77 103 110 32 69 114 114 111 114 32 84 101 109 112 0 ]
+[a 4C 77 103 110 32 69 114 114 111 114 32 72 117 109 0 ]
+[a 6C 46 37 100 0 ]
+[a 9C 46 37 100 0 ]
+[a 5C 37 100 0 ]
+[a 8C 37 100 0 ]
+[a 1C 84 101 109 112 46 32 65 100 101 99 117 97 100 97 0 ]
+[a 3C 72 117 109 46 32 65 100 101 99 117 97 100 97 0 ]
+[a 10C 67 32 84 101 109 112 46 0 ]
+[a 7C 32 32 72 117 109 46 0 ]
